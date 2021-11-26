@@ -9,7 +9,6 @@ import csv
 import json
 import time
 
-from requests.models import Response
 
 base_url = "https://en.wikipedia.org"
 url = 'https://en.wikipedia.org/wiki/Category:Companies_listed_on_the_London_Stock_Exchange'
@@ -118,7 +117,6 @@ def main():
                 lines[2]=lines[2].strip()
                 print(lines[2])
                 if lines[2]!="":
-                    print("ssssssssssssss")
                     data = {
                         "name":lines[1],
                         "old_webiste": lines[2],
